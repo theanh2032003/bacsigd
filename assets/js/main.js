@@ -42,7 +42,7 @@ function createPhoneModal() {
         margin-bottom: 1rem;
         transition: background-color 0.3s;
       " onmouseover="this.style.backgroundColor='#1b5e20'" onmouseout="this.style.backgroundColor='#2e7d32'">
-        📞 0986 777 365
+        0986 777 365
       </a>
       <p style="color: #999; font-size: 14px; margin: 1rem 0;">Hoạt động 24/7, hỗ trợ tư vấn ngay lập tức</p>
       <button onclick="document.getElementById('phone-modal').style.display='none'" style="
@@ -123,9 +123,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Set active link
   const currentPage = window.location.pathname;
+  const currentPageName = currentPage.split('/').pop() || 'index.html';
+  
   navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPage || 
-        link.getAttribute('href').includes(currentPage.split('/').pop())) {
+    const href = link.getAttribute('href');
+    const hrefName = href.split('/').pop();
+    
+    // Check if current page matches
+    if (href === currentPage || 
+        hrefName === currentPageName ||
+        (currentPageName === '' && (href === 'index.html' || href.endsWith('/index.html'))) ||
+        currentPage.endsWith('/') && (href === 'index.html' || href.endsWith('/index.html'))) {
       link.classList.add('active');
     }
   });
