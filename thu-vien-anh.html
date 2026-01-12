@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư Viện Ảnh | Dịch Vụ Bác Sĩ Gia Đình Tại Nhà Hà Nội</title>
+  <meta name="description" content="Thư viện hình ảnh dịch vụ khám bệnh, tiêm truyền, chăm sóc người cao tuổi">
+  <meta name="keywords" content="thư viện ảnh, hình ảnh dịch vụ, cơ sở vật chất">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .gallery-image {
+      width: 100%;
+      height: 250px;
+      background: linear-gradient(135deg, #2e7d32, #1b5e20);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      color: white;
+    }
+    
+    .gallery-content {
+      padding: 1.5rem;
+    }
+    
+    .gallery-content h3 {
+      margin: 0 0 0.5rem;
+      color: var(--primary-color);
+    }
+    
+    .gallery-content p {
+      color: var(--text-light);
+      margin: 0;
+      font-size: 14px;
+    }
+    
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-clinic-medical"></i> Bác Sĩ Gia Đình 24/7
+      </a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+        <li><a href="doi-ngu.html">Đội Ngũ</a></li>
+        <li class="dropdown">
+          <a href="dich-vu.html">Dịch Vụ</a>
+          <ul class="dropdown-menu">
+            <li><a href="dich-vu/kham-tai-nha.html">Khám Tại Nhà</a></li>
+            <li><a href="dich-vu/tiem-truyen-tai-nha.html">Tiêm & Truyền Tại Nhà</a></li>
+          </ul>
+        </li>
+        <li><a href="bang-gia.html">Bảng Giá</a></li>
+        <li><a href="tin-tuc.html">Tin Tức</a></li>
+        <li><a href="lien-he.html">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="margin-bottom: 0;">
+    <div class="container" style="text-align: center;">
+      <h1 style="font-size: 40px; color: var(--primary-dark); margin-bottom: 1rem;">Thư Viện Ảnh</h1>
+      <p style="font-size: 18px; color: var(--text-light);">Khám phá hình ảnh dịch vụ và cơ sở vật chất của chúng tôi</p>
+    </div>
+  </section>
+
+  <section class="services" style="background: #fff; padding: 4rem 0;">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 1rem;">Khám Bệnh Tại Nhà</h2>
+      <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+        Hình ảnh dịch vụ khám chữa bệnh tại nhà với đội ngũ bác sĩ chuyên nghiệp
+      </p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="gallery-image">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Khám Bệnh Toàn Diện</h3>
+            <p>Bác sĩ khám tại nhà, đo dấu hiệu sinh tồn, tư vấn sức khỏe</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #0a8cff, #006fcc);">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Đo Huyết Áp & Tim</h3>
+            <p>Kiểm tra sức khỏe tim mạch, theo dõi huyết áp định kỳ</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #ff6b35, #cc5500);">
+            <i class="fas fa-user-nurse"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Tư Vấn Y Tế</h3>
+            <p>Bác sĩ tư vấn chi tiết về bệnh tình và cách chữa trị phù hợp</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin-top: 4rem; margin-bottom: 1rem;">Tiêm & Truyền Tại Nhà</h2>
+      <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+        Hình ảnh dịch vụ tiêm chích, truyền nước tại nhà an toàn
+      </p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #9c27b0, #6a1b9a);">
+            <i class="fas fa-syringe"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Tiêm Chích Ngừa</h3>
+            <p>Tiêm vaccine phòng bệnh theo kế hoạch hoặc yêu cầu</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #f39c12, #d68910);">
+            <i class="fas fa-flask"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Truyền Nước & Dung Dịch</h3>
+            <p>Truyền dung dịch, nước sinh lý để cấp cứu hoặc bổ sung</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #e91e63, #c2185b);">
+            <i class="fas fa-droplet"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Lấy Máu Xét Nghiệm</h3>
+            <p>Lấy mẫu máu khép kín, vô trùng để gửi xét nghiệm</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin-top: 4rem; margin-bottom: 1rem;">Chăm Sóc Người Cao Tuổi</h2>
+      <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+        Hình ảnh dịch vụ chăm sóc tận tâm cho người cao tuổi
+      </p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #2e7d32, #1b5e20);">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Chăm Sóc Tại Nhà</h3>
+            <p>Hỗ trợ sinh hoạt hàng ngày, theo dõi sức khỏe liên tục</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #0a8cff, #006fcc);">
+            <i class="fas fa-bed"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Hỗ Trợ Sinh Hoạt</h3>
+            <p>Giúp đỡ vệ sinh cá nhân, ăn uống, vận động hàng ngày</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #ff6b35, #cc5500);">
+            <i class="fas fa-person-cane"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Đo Dấu Hiệu Sinh Tồn</h3>
+            <p>Theo dõi mạch, huyết áp, nhiệt độ và sức khỏe định kỳ</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; margin-top: 4rem; margin-bottom: 1rem;">Chăm Sóc Vết Thương</h2>
+      <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+        Dịch vụ chuyên nghiệp xử lý vết thương, đổi băng vô trùng
+      </p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #9c27b0, #6a1b9a);">
+            <i class="fas fa-band-aid"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Cọ Rửa & Vệ Sinh</h3>
+            <p>Cọ rửa vết thương sạch sẽ, vô trùng trước khi xử lý</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #f39c12, #d68910);">
+            <i class="fas fa-bandage"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Đổi Băng Định Kỳ</h3>
+            <p>Đổi băng sạch, chuyên nghiệp theo đúng quy trình y tế</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <div class="gallery-image" style="background: linear-gradient(135deg, #e91e63, #c2185b);">
+            <i class="fas fa-prescription-bottle-medical"></i>
+          </div>
+          <div class="gallery-content">
+            <h3>Thuốc & Dụng Cụ</h3>
+            <p>Sử dụng thuốc, dụng cụ y tế tiêu chuẩn, có giấy tờ</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white; padding: 3rem; border-radius: var(--radius); margin-top: 4rem; text-align: center;">
+        <h3 style="margin-top: 0;">Cần Dịch Vụ Y Tế Tại Nhà?</h3>
+        <p>Liên hệ với chúng tôi ngay để được tư vấn và đặt lịch khám</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="tel:0986777365" class="cta-btn" style="background: white; color: var(--primary-color); text-decoration: none; padding: 1rem 2rem; border-radius: 8px; font-weight: 600;">
+            <i class="fas fa-phone"></i> Gọi Ngay: 0986 777 365
+          </a>
+          <a href="https://zalo.me/0986777365" target="_blank" class="cta-btn" style="background: white; color: var(--primary-color); text-decoration: none; padding: 1rem 2rem; border-radius: 8px; font-weight: 600;">
+            <i class="fab fa-zalo"></i> Chat Zalo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Bác Sĩ Gia Đình 24/7</h4>
+        <p>Dịch vụ khám bệnh, tiêm truyền tại nhà uy tín hàng đầu Hà Nội</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://zalo.me/0986777365" target="_blank" rel="noopener">
+            <i class="fab fa-zalo"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Liên Hệ</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 365 Trường Chinh, Thanh Xuân, Hà Nội</p>
+        <p><i class="fas fa-phone"></i> <a href="tel:0986777365">0986 777 365</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:contact@bacsigiadinh24.com">contact@bacsigiadinh24.com</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Dịch Vụ</h4>
+        <ul>
+          <li><a href="dich-vu/kham-tai-nha.html">Khám Tại Nhà</a></li>
+          <li><a href="dich-vu/tiem-truyen-tai-nha.html">Tiêm & Truyền</a></li>
+          <li><a href="bang-gia.html">Bảng Giá</a></li>
+          <li><a href="tin-tuc.html">Tin Tức</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Về Chúng Tôi</h4>
+        <ul>
+          <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+          <li><a href="doi-ngu.html">Đội Ngũ</a></li>
+          <li><a href="lien-he.html">Liên Hệ</a></li>
+          <li><a href="#privacy">Chính Sách</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Dịch Vụ Y Tế Tại Nhà. Bản quyền thuộc về <strong>Bác Sĩ Gia Đình 24/7</strong></p>
+      <p>Địa chỉ: 365 Trường Chinh, Thanh Xuân, Hà Nội | Hotline: <a href="tel:0986777365">0986 777 365</a></p>
+    </div>
+  </div>
+
+  <div class="floating-contact">
+    <button class="float-btn phone-btn" title="Gọi ngay">
+      <i class="fas fa-phone"></i>
+    </button>
+    <a href="https://zalo.me/0352490971" class="float-btn zalo-btn" target="_blank" rel="noopener" title="Nhắn Zalo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" width="28" height="28" style="display: inline-block;">
+    </a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+</body>
+</html>
