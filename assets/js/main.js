@@ -30,7 +30,7 @@ function createPhoneModal() {
     ">
       <h3 style="margin-top: 0; color: #2e7d32;">Gọi Tư Vấn Y Tế</h3>
       <p style="color: #666; margin-bottom: 1.5rem;">Liên hệ ngay để được hỗ trợ 24/7</p>
-      <a href="tel:0986777365" style="
+      <a href="tel:0352490978" style="
         display: inline-block;
         padding: 1rem 2rem;
         background-color: #2e7d32;
@@ -42,7 +42,7 @@ function createPhoneModal() {
         margin-bottom: 1rem;
         transition: background-color 0.3s;
       " onmouseover="this.style.backgroundColor='#1b5e20'" onmouseout="this.style.backgroundColor='#2e7d32'">
-        0986 777 365
+        0352 490 978
       </a>
       <p style="color: #999; font-size: 14px; margin: 1rem 0;">Hoạt động 24/7, hỗ trợ tư vấn ngay lập tức</p>
       <button onclick="document.getElementById('phone-modal').style.display='none'" style="
